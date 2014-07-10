@@ -1,0 +1,33 @@
+<!DOCTYPE >
+<html>
+ <head>
+  <meta name="viewport" content="width=device-width, user-scalable=no ,target-densitydpi=device-dpi ,initial-scale= 0.5"/>
+       
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+       
+  <style>
+  body,html{ margin:0;padding: 0; }
+  </style>
+ </head>
+       
+ <body>
+         
+  <div style="width:320px;height:100px;background:red;">
+        <font style="font-size:24px;">中文</font>
+  </div>
+       
+  <div>
+    <img src="back_btn.png">
+  </div>
+       
+    <script type="text/javascript">
+       
+    $(document).ready(function(){
+        var initial_scale = 1/window.devicePixelRatio;
+       
+        alert($(window).width() + " / " + $(window).height() + " / " +window.devicePixelRatio + " / " + initial_scale);
+    })
+       
+    </script>
+ </body>
+</html>
